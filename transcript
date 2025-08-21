@@ -1,0 +1,26 @@
+# Compile of _and.v was successful.
+# Error: Acs eeao
+#        Unable to replace existing ini file (C:/Users/artur/OneDrive/Desktop/ElTiburon/ElTiburon.mpf).  File can not be renamed.
+vsim -gui ElTiburon._and
+# vsim -gui ElTiburon._and 
+# Start time: 23:28:38 on Aug 20,2025
+# Loading ElTiburon._and
+add wave -position end  sim:/_and/a
+add wave -position end  sim:/_and/b
+add wave -position end  sim:/_and/c
+force -freeze sim:/_and/a 0 0
+force -freeze sim:/_and/b 0 0
+force -freeze sim:/_and/c 0 0
+run
+force -freeze sim:/_and/a 0 0
+force -freeze sim:/_and/b 1 0
+force -freeze sim:/_and/c 0 0
+run
+force -freeze sim:/_and/a 1 0
+force -freeze sim:/_and/b 0 0
+force -freeze sim:/_and/c 0 0
+run
+force -freeze sim:/_and/a 1 0
+force -freeze sim:/_and/b 1 0
+force -freeze sim:/_and/c 1 0
+run
